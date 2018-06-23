@@ -17,7 +17,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class BeanConvertUtil {
 	private static Map<String, Map<String, Method>> methodMap;
 
-	private static BeanConvertUtil beanConvertUtil = null;
+	private static volatile BeanConvertUtil beanConvertUtil = null;
 
 	private BeanConvertUtil() {
 
